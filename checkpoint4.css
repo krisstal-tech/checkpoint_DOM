@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.cart-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #444;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-details h3 {
+    margin: 0;
+    color: #555;
+}
+
+.item-details p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.quantity-controls button {
+    padding: 0.5rem;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-controls button:hover {
+    background-color: #388e3c;
+}
+
+.item-actions button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.item-actions .btn-heart {
+    color: grey;
+}
+
+.item-actions .btn-heart.liked {
+    color: red;
+}
+
+.item-actions .btn-delete:hover {
+    color: #e53935;
+}
+.cart-total {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+    margin-top: 1rem;
+}
